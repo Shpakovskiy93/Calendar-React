@@ -33,7 +33,7 @@ const ButtonsWrapper = styled('div')`
   align-items: center;
 `;
 
-const Monitor = ({today}) => {
+const Monitor = ({today, prevHandler, todayHandler, nextHandler}) => {
   return (
     <DivWrapper>
       <div>
@@ -41,9 +41,9 @@ const Monitor = ({today}) => {
         <TextWrapper>{today.format('YYYY')}</TextWrapper>
       </div>
       <ButtonsWrapper>
-        <ButtonWrapper>&lt;</ButtonWrapper>
-        <TodayButton>Today</TodayButton>
-        <ButtonWrapper>&gt;</ButtonWrapper>
+        <ButtonWrapper onClick={prevHandler}> &lt; </ButtonWrapper>
+        <TodayButton onClick={todayHandler}> Today </TodayButton>
+        <ButtonWrapper onClick={nextHandler}> &gt; </ButtonWrapper>
       </ButtonsWrapper>
     </DivWrapper>
   )
