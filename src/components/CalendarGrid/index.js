@@ -1,5 +1,5 @@
 import React from 'react'
-import  styled  from 'styled-components';
+import styled  from 'styled-components';
 
 const GridWrapper = styled.div`
   display: grid;
@@ -27,7 +27,7 @@ const DayWrapper = styled.div`
 `;
 
 const CalendarGrid = ({startDay}) => {
-  const totalDays = 42;
+  // const totalDays = 42;
   const day = startDay.clone().subtract(1, 'day');
   const daysArray = [...Array(42)].map(() => day.add(1, 'day').clone());
 
