@@ -1,0 +1,9 @@
+{
+    "events":[
+        {"id": 1, "title": "Bar", "description": "Go to the bar", "date": 1692111684},
+        {"id": 2, "title": "School", "description": "Go to the school", "date": 1692101015},
+        {"id": 3, "title": "Bad", "description": "Go to bad", "date": 1692025284},
+        {"id": 4, "title": "lorem", "description": "lorem", "date": 1689422615},
+        {"id": 5, "title": "lorem ips", "description": "lorem ips", "date": 1694790976}
+    ]
+}
